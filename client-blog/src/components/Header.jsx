@@ -8,8 +8,8 @@ import {  FaMoon}  from 'react-icons/fa';
 const Header = () => {
    const path = useLocation().pathname;
   return (
-    <Navbar className='border-b-2'>
-        <Link to ="/" className='self-center whitespace-nowrap test-sm sm:text-xl font-bold dark:text-white'>
+   <Navbar className='border-b-2'>
+         <Link to ="/" className='self-center whitespace-nowrap test-sm sm:text-xl font-bold dark:text-white'>
             <span className='px-2 py-1 bg-gradient-to-r from-indigo-500
              via-purple-500 to-pink-500 rounded-lg text-white'>Raish`s</span>
             Blog

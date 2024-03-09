@@ -9,6 +9,7 @@ export default function DashPosts() {
   const { currentUser } = useSelector((state) => state.user);
   const [userPosts, setUserPosts] = useState([]);
   const [showMore, setShowMore] = useState(true);
+  //show more functionality
   const [showModal, setShowModal] = useState(false);
   const [postIdToDelete, setPostIdToDelete] = useState('');
   useEffect(() => {
@@ -40,7 +41,7 @@ export default function DashPosts() {
       const data = await res.json();
       if (res.ok) {
         setUserPosts((prev) => [...prev, ...data.posts]);
-        if (data.posts.length < 9) {
+        if (data.posts.length < 6) {
           setShowMore(false);
         }
       }
